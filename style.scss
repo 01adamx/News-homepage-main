@@ -1,0 +1,166 @@
+$soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $Dark-grayish-blue;
+}
+a:hover {
+    color: $Soft-red;
+}
+
+h1 {
+font-weight: 800;
+font-size: 2.5rem;
+}
+#close-btn, .hambuger{
+    display: none;
+}
+p {
+    color: $Dark-grayish-blue;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: $Off-white;
+}
+
+main {
+    margin: 5% 10%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        width: 45px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    column-gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 2.3;
+
+    .top {
+        background-image: url(assets/images/image-web-3-desktop.jpg);
+        background-size: cover;
+        height: 200px;
+    }
+
+    .down {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        column-gap: 20px;
+
+        .down-1, .down-2 {
+            width: 50%;
+        }
+        .down-2 {
+            button {
+                margin-top: 20px;
+                border: none;
+                background-color: $Soft-red;
+                padding: 7px 15px;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: $Very-dark-blue;
+            }
+        }
+    }
+    
+}
+
+.right {
+    flex: 1;
+    background-color: $Very-dark-blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+
+    h2 {
+        color: $soft-orange;
+    }
+    p {
+        color: $Grayish-blue;
+    }
+    hr {
+        background-color: $Dark-grayish-blue;
+        height: 1px;
+        border: none;
+    }
+}
+
+.foot {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 20px;
+
+    .blog {
+        display: flex;
+        flex: 1;
+        column-gap: 10px;
+
+        h2 {
+            color: $Grayish-blue;
+        }
+        h3 {
+            cursor: pointer;
+        }
+        h3:hover {
+            color: $Soft-red;
+        }
+
+        .img-1 {
+            background-image: url(assets/images/image-retro-pcs.jpg);
+            min-width: 60px;
+            background-size: cover;
+        }
+        .img-2 {
+            background-image: url(assets/images/image-top-laptops.jpg);
+            min-width: 60px;
+            background-size: cover;
+        }
+        .img-3 {
+            background-image: url(assets/images/image-gaming-growth.jpg);
+            min-width: 60px;
+            background-size: cover;
+        }
+    }
+}

@@ -5,56 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <header>
+      <img src="assets/images/logo.svg" class="logo" alt="">
+      <img src="assets/images/icon-menu.svg" class="hambuger" alt="">
+      <ul class="nav-desktop">
+        <li><a href="#" id="close-btn"><img src="assets/images/icon-menu-close.svg" alt=""></a></li>
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">New</a></li>
+        <li><a href="#" class="nav-link">Popular</a></li>
+        <li><a href="#" class="nav-link">Trending</a></li>
+        <li><a href="#" class="nav-link">Categories</a></li>
+      </ul>
+    </header>
+
+    <section class="main">
+      <div class="left">
+        <div class="top"></div>
+        <div class="down">
+          <div class="down-1">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="down-2">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h2>New</h2>
+        <div>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr>
+        <div>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="foot">
+      <div class="blog">
+        <div class="img-1"></div>
+        <div>
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="blog">
+        <div class="img-2"></div>
+        <div>
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="blog">
+        <div class="img-3"></div>
+        <div>
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/adamx23x"> @adamx23x</a>.
+    </div>
+  </main>
+
 </body>
 </html>

@@ -1,0 +1,219 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #5d5f79;
+}
+
+a:hover {
+  color: #f15e50;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+#close-btn, .hambuger {
+  display: none;
+}
+
+p {
+  color: #5d5f79;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #fffdfa;
+}
+
+main {
+  margin: 5% 10%;
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 45px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 2.3;
+      -ms-flex: 2.3;
+          flex: 2.3;
+}
+
+.left .top {
+  background-image: url(assets/images/image-web-3-desktop.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.left .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.left .down .down-1, .left .down .down-2 {
+  width: 50%;
+}
+
+.left .down .down-2 button {
+  margin-top: 20px;
+  border: none;
+  background-color: #f15e50;
+  padding: 7px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.left .down .down-2 button:hover {
+  background-color: #00001a;
+}
+
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #00001a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.right h2 {
+  color: #e9ab53;
+}
+
+.right p {
+  color: #c5c6ce;
+}
+
+.right hr {
+  background-color: #5d5f79;
+  height: 1px;
+  border: none;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.foot .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.foot .blog h2 {
+  color: #c5c6ce;
+}
+
+.foot .blog h3 {
+  cursor: pointer;
+}
+
+.foot .blog h3:hover {
+  color: #f15e50;
+}
+
+.foot .blog .img-1 {
+  background-image: url(assets/images/image-retro-pcs.jpg);
+  min-width: 60px;
+  background-size: cover;
+}
+
+.foot .blog .img-2 {
+  background-image: url(assets/images/image-top-laptops.jpg);
+  min-width: 60px;
+  background-size: cover;
+}
+
+.foot .blog .img-3 {
+  background-image: url(assets/images/image-gaming-growth.jpg);
+  min-width: 60px;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
