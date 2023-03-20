@@ -11,7 +11,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #5d5f79;
+  color: #00001a;
 }
 
 a:hover {
@@ -20,28 +20,27 @@ a:hover {
 
 h1 {
   font-weight: 800;
-  font-size: 2.5rem;
-}
-
-#close-btn, .hambuger {
-  display: none;
+  font-size: 2.7rem;
 }
 
 p {
   color: #5d5f79;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 body {
-  height: 100vh;
   font-family: 'Inter', sans-serif;
   background-color: #fffdfa;
 }
 
+body.filter {
+  background-color: #c5c6ce;
+}
+
 main {
-  margin: 5% 10%;
-  height: 100%;
+  margin: 40px 5%;
+  height: 100vh;
 }
 
 header {
@@ -56,11 +55,15 @@ header {
           align-items: center;
 }
 
+header #close-btn, header .hambuger {
+  display: none;
+}
+
 header .logo {
   width: 45px;
 }
 
-header ul {
+header .nav-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +73,11 @@ header ul {
           flex-direction: row;
   -webkit-column-gap: 50px;
           column-gap: 50px;
+}
+
+header .nav-link {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .main {
@@ -121,13 +129,21 @@ header ul {
   width: 50%;
 }
 
+.left .down .down-2 {
+  position: relative;
+}
+
 .left .down .down-2 button {
+  position: absolute;
   margin-top: 20px;
   border: none;
   background-color: #f15e50;
-  padding: 7px 15px;
+  padding: 10px 20px;
   color: white;
   cursor: pointer;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  bottom: 0;
 }
 
 .left .down .down-2 button:hover {
@@ -193,6 +209,8 @@ header ul {
 
 .foot .blog h3 {
   cursor: pointer;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .foot .blog h3:hover {
@@ -215,5 +233,93 @@ header ul {
   background-image: url(assets/images/image-gaming-growth.jpg);
   min-width: 60px;
   background-size: cover;
+}
+
+@media (max-width: 670px) {
+  main {
+    margin: 5% 20px;
+  }
+  a {
+    font-size: 20px;
+  }
+  a:hover {
+    font-weight: bold;
+  }
+  header nav {
+    display: none;
+  }
+  header nav.menu-btn {
+    display: block;
+  }
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    width: 70%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 30px;
+    background-color: #fffdfa;
+  }
+  header nav .nav-desktop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+  }
+  header #close-btn, header .hambuger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  header #close-btn {
+    float: right;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left .top {
+    height: 300px;
+  }
+  .left .down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left .down .down-1, .left .down .down-2 {
+    width: 100%;
+  }
+  .left .down .down-2 {
+    padding: 20px 0 60px 0;
+  }
+  .right {
+    margin-top: 50px;
+    gap: 30px;
+    padding: 30px 15px;
+  }
+  .foot {
+    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .foot .blog {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 /*# sourceMappingURL=style.css.map */

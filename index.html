@@ -24,15 +24,19 @@
   <main>
     <header>
       <img src="assets/images/logo.svg" class="logo" alt="">
-      <img src="assets/images/icon-menu.svg" class="hambuger" alt="">
-      <ul class="nav-desktop">
-        <li><a href="#" id="close-btn"><img src="assets/images/icon-menu-close.svg" alt=""></a></li>
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">New</a></li>
-        <li><a href="#" class="nav-link">Popular</a></li>
-        <li><a href="#" class="nav-link">Trending</a></li>
-        <li><a href="#" class="nav-link">Categories</a></li>
-      </ul>
+      <img src="assets/images/icon-menu.svg" id="mobileBtn" class="hambuger" alt="">
+      
+      <nav>
+        <img src="assets/images/icon-menu-close.svg" id="close-btn" alt="">
+        <ul class="nav-desktop">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">New</a></li>
+          <li><a href="#" class="nav-link">Popular</a></li>
+          <li><a href="#" class="nav-link">Trending</a></li>
+          <li><a href="#" class="nav-link">Categories</a></li>
+        </ul>
+      </nav>
+      
     </header>
 
     <section class="main">
@@ -102,6 +106,21 @@
       Coded by <a href="https://twitter.com/adamx23x"> @adamx23x</a>.
     </div>
   </main>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileBtn')
+      nav = document.querySelector('nav')
+      mobileBtnExit = document.getElementById('close-btn')
+      body = document.querySelector('body');
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn')
+      body.classList.add('filter');
+    })
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn')
+      body.classList.remove('filter');
+    })
+  </script>
 
 </body>
 </html>
