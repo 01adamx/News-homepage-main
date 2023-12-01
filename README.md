@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/adamx23x/News-homepage-main](https://github.com/adamx23x/News-homepage-main)
-- Live Site URL: [https://adamx23x.github.io/News-homepage-main/](https://adamx23x.github.io/News-homepage-main/)
+- Solution URL: [https://github.com/adamx23x/News-homepage-main](https://github.com/01adamx/News-homepage-main)
+- Live Site URL: [https://adamx23x.github.io/News-homepage-main/](https://01adamx.github.io/News-homepage-main/)
 
 ## My process
 
